@@ -1,0 +1,127 @@
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+/* App Main */
+
+/* 🎵 Layout หลัก */
+.app-container {
+  overflow: hidden;
+}
+
+.app-main {
+  height: calc(100vh - 60px);
+  margin-top: 59px !important;
+}
+
+/* 🎶 Scroll เฉพาะ SongList & SongView */
+
+
+.app-songview {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
+/* 📱 Mobile detail overlay */
+.app-mobile-detail {
+  position: fixed;
+  z-index: 2000;;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+}
+
+/* 🌈 Scrollbar แบบบาง */
+.app-songlist::-webkit-scrollbar,
+.app-songview::-webkit-scrollbar {
+  width: 6px;
+}
+
+.app-songlist::-webkit-scrollbar-thumb,
+.app-songview::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+
+/* Chord View */
+.txt-chord{
+  font-size: 1em;
+  font-weight: 700;
+  color: #0867c7;
+  padding: 1px 5px;
+  margin: 2px 0px 0 2px !important;
+}
+
+
+.song-title{
+  font-weight: 700;
+  color: #024d97;
+}
+
+.modal-body {
+  max-height: calc(100% - 120px); /* ลบ header+footer ประมาณ 120px */
+  overflow-y: auto;
+}
+
+/* .navbar {
+  background-color: rgb(0 126 255) 
+} */
+
+
+/* Song List Background */
+.app-songlist{
+  background:rgb(24 32 46);
+}
+
+.songlist-mobile{
+  background:rgb(24 32 46);
+  padding: 10px 50px !important;
+}
+
+/* Song List table */
+.table-songlist {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+.table-songlist td {
+ 
+  vertical-align: middle;
+}
+
+.table-songlist tr {
+  height: 45px;
+}
+
+.songlist-group-row {
+  color: rgb(100, 111, 124) ;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 700;
+  border-bottom: 1px dotted rgb(71, 76, 87);
+}
+
+.songlist-data-row{
+  color: rgb(164, 172, 189);
+  border-bottom: 1px dotted rgb(71, 76, 87);
+}
+
+.songlist-data-row td:first-child{
+  padding-left: 17px;
+}
+ 
+
+/* Songview */
+.songview-container{
+      padding: 20px 30px !important;
+}
+
+
